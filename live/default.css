@@ -1,0 +1,14 @@
+html {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #444444;
+	background-color: #e4e4e4;
+}
+
+div#page {
+	margin: 60px auto;
+	width: 1000px;
+}
+
+header {
+	text-align: center;
+}
