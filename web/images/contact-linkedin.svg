@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>contact-linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="In-Black-0p5in-R-Copy-2" transform="translate(1.000000, 0.000000)" fill="#FFFFFF">
+            <path d="M14,14 L11.1138807,14 L11.1138807,9.25445871 C11.1138807,8.12302624 11.0955012,6.66727252 9.61433119,6.66727252 C8.1120788,6.66727252 7.88287585,7.90037487 7.88287585,9.17380438 L7.88287585,14 L5,14 L5,4.24196297 L7.76665265,4.24196297 L7.76665265,5.57616722 L7.80665505,5.57616722 C8.19154304,4.80881518 9.13322121,4 10.5370893,4 C13.4599676,4 14,6.02033398 14,8.64841531 L14,14 Z" id="Path"></path>
+            <path d="M1.50096899,3 C0.67005814,3 0,2.32811238 0,1.49975779 C0,0.671887615 0.67005814,0 1.50096899,0 C2.32848837,0 3,0.671887615 3,1.49975779 C3,2.32811238 2.32848837,3 1.50096899,3 Z" id="Path"></path>
+            <polygon id="Path" points="0 14 3 14 3 5 0 5"></polygon>
+        </g>
+    </g>
+</svg>

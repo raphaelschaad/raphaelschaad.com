@@ -1,0 +1,252 @@
+/* CSS support shouldiprefix.com */
+
+/* There is no way to extend the gradient (unlike solid colors) beyond the viewport to the white browser scroll bounce background. */
+#stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  background-image: linear-gradient(to right, #91B6BD, #E39059, #E38FAC);
+}
+
+body {
+  background-color: #021017;
+
+  /* Default text settings */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
+  font-weight: 500;
+
+  margin: 0;
+}
+
+#cols {
+  margin: 24px;
+}
+
+#col1 {
+  float: left;
+  width: 25%;
+}
+
+#col2 {
+  float: left;
+  width: 75%;
+}
+
+#name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  margin: 80px 0 0 0;
+}
+
+#title {
+  color: #666;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+#description {
+  margin: 112px 0 0 0;
+}
+
+#contact {
+  list-style-type: none;
+  margin: 14px 0;
+  padding: 0;
+}
+
+#contact li {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#contact img {
+  /* B: 40% = #666 */
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
+
+  /* On mouse out, initial state is w/o transition. */
+  transition: 0.2s;
+}
+
+#contact img:hover {
+  /* On mouse in */
+  transition: 0.1s;
+
+  -webkit-filter: none;
+  filter: none;
+}
+
+#contact img:active {
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+#verb {
+  display: inline-block;
+  width: 2.35em;
+}
+
+.specialty {
+  /* Finer underline than with text-decoration. */
+  border-bottom-style: solid;
+  border-color: #666;
+  border-width: 2px;
+
+  padding: 0 0 2.5px 0;
+}
+
+/* Box -- https://3dtransforms.desandro.com */
+#scene {
+  width: 120px;
+  /* The height is repeated (hardcoded) as line-height for the faces. */
+  height: 40px;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -3px 3px;
+
+  /* The smaller the number, the "bigger" the 3D effect. */
+  -webkit-perspective: 400px;
+  -ms-perspective: 400px;
+  perspective: 400px;
+}
+
+#object {
+  /* Move transform origin to the center of the scene. */
+  width: 100%;
+  height: 100%;
+
+  display: inline-block;
+
+  /* Pass perspective on to all children. */
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  transition: transform 0.8s ease-in;
+}
+
+/* Faces */
+#object span {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Center text */
+  text-align: center;
+  line-height: 40px;
+
+  /* If side colors have alpha and the backfaces are not hidden, the object is translucent. */
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#object img {
+  /* Center image */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* Setup */
+#object .front {
+  background: #A9CFD6;
+  
+  -webkit-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+#object .back {
+  background: #E2A8BC;
+
+  -webkit-transform: rotateX(-180deg) translateZ(20px);
+  -ms-transform: rotateX(-180deg) translateZ(20px);
+  transform: rotateX(-180deg) translateZ(20px);
+}
+
+#object .top {
+  background: #F0CA8D;
+
+  -webkit-transform: rotateX(90deg) translateZ(20px);
+  -ms-transform: rotateX(90deg) translateZ(20px);
+  transform: rotateX(90deg) translateZ(20px);
+}
+
+#object .bottom {
+  background: #AAA;
+
+  -webkit-transform: rotateX(-90deg) translateZ(20px);
+  -ms-transform: rotateX(-90deg) translateZ(20px);
+  transform: rotateX(-90deg) translateZ(20px);
+}
+
+#object .right {
+  -webkit-transform: rotateY(90deg) translateZ(60px);
+  -ms-transform: rotateY(90deg) translateZ(60px);
+  transform: rotateY(90deg) translateZ(60px);
+}
+
+#object .left {
+  -webkit-transform: rotateY(-90deg) translateZ(60px);
+  -ms-transform: rotateY(-90deg) translateZ(60px);
+  transform: rotateY(-90deg) translateZ(60px);
+}
+
+#object .right, #object .left {
+  background: #000;
+
+  width: 40px;
+  left: 40px;
+}
+
+/* Transforms */
+#object.show-front {
+  -webkit-transform: translateZ(-60px);
+  -ms-transform: translateZ(-60px);
+  transform: translateZ(-60px);
+}
+
+#object.show-back {
+  /* +0.001 to force Safari to not rotate "backwards". Doesn't work for FF. */
+  -webkit-transform: translateZ(-60px) rotateX(-180.001deg);
+  -ms-transform: translateZ(-60px) rotateX(-180.001deg);
+  transform: translateZ(-60px) rotateX(-180.001deg);
+}
+
+#object.show-top {
+  -webkit-transform: translateZ(-60px) rotateX(-90deg);
+  -ms-transform: translateZ(-60px) rotateX(-90deg);
+  transform: translateZ(-60px) rotateX(-90deg);
+}
+
+#object.show-bottom {
+  -webkit-transform: translateZ(-60px) rotateX(90deg);
+  -ms-transform: translateZ(-60px) rotateX(90deg);
+  transform: translateZ(-60px) rotateX(90deg);
+}
+
+#object.show-right {
+  -webkit-transform: translateZ(-60px) rotateY(-90deg);
+  -ms-transform: translateZ(-60px) rotateY(-90deg);
+  transform: translateZ(-60px) rotateY(-90deg);
+}
+
+#object.show-left {
+  -webkit-transform: translateZ(-60px) rotateY(90deg);
+  -ms-transform: translateZ(-60px) rotateY(90deg);
+  transform: translateZ(-60px) rotateY(90deg);
+}
