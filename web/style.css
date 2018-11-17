@@ -6,9 +6,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 5px;
 
-  background-image: linear-gradient(to right, #91B6BD, #E39059, #E38FAC);
+  background-image: linear-gradient(to right, #89BEC7, #E39059, #E38FAC);
 }
 
 body {
@@ -20,44 +20,47 @@ body {
   color: white;
   /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
   font-weight: 500;
+  line-height: 1.6;
 
   margin: 0;
 }
 
 #cols {
+  display: flex;
   margin: 24px;
 }
 
 #col1 {
-  float: left;
-  width: 25%;
+  flex: 25%;
+  min-width: 12em;
 }
 
 #col2 {
-  float: left;
-  width: 75%;
+  flex: 75%;
 }
 
 #name {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -1.8px;
-  margin: 80px 0 0 0;
+  margin: 72px 0 0 0;
 }
 
 #title {
   color: #666;
   letter-spacing: 2px;
   margin: 0;
+  margin: -10px 0 0 0;
 }
 
 #description {
   margin: 112px 0 0 0;
+  min-width: 28em;
 }
 
 #contact {
   list-style-type: none;
-  margin: 14px 0;
+  margin: 8px 0;
   padding: 0;
 }
 
@@ -92,15 +95,15 @@ body {
 #verb {
   display: inline-block;
   width: 2.35em;
+  letter-spacing: 0.01px;
 }
 
 .specialty {
-  /* Finer underline than with text-decoration. */
+  /* Thicker underline than with text-decoration. */
   border-bottom-style: solid;
   border-color: #666;
   border-width: 2px;
-
-  padding: 0 0 2.5px 0;
+  padding: 0 0 3px 0;
 }
 
 /* Box -- https://3dtransforms.desandro.com */
@@ -110,8 +113,8 @@ body {
   height: 40px;
 
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 -3px 3px;
+  vertical-align: -45%;
+  margin: 0 -3px;
 
   /* The smaller the number, the "bigger" the 3D effect. */
   -webkit-perspective: 400px;
@@ -163,7 +166,7 @@ body {
 
 /* Setup */
 #object .front {
-  background: #A9CFD6;
+  background: #89BEC7;
   
   -webkit-transform: translateZ(20px);
   -ms-transform: translateZ(20px);
