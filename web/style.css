@@ -43,6 +43,10 @@ body {
   max-width: 45em;
 }
 
+#col2 img {
+  width: 100%;
+}
+
 #name {
   font-size: 32px;
   font-weight: 700;
@@ -287,7 +291,9 @@ body {
   /* Hard-coded repetition of body background-color. */
   color: #031018;
   background-color: #666;
-  border: none;
+  /* Requirec configuration to prevent rounding on mobile. */
+  border: 0 none;
+  border-radius: 0;
   height: 40px;
   vertical-align: middle;
   text-align: center;
