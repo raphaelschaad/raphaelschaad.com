@@ -153,9 +153,9 @@ body {
   width: 100%;
   height: 100%;
 
-  /* Center text */
+  /* We currently only show images on the faces, if we were to show text and want it to be centered:
   text-align: center;
-  line-height: 40px;
+  line-height: 40px; */
 
   /* If side colors have alpha and the backfaces are not hidden, the object is translucent. */
   -webkit-backface-visibility: hidden;
@@ -171,6 +171,8 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+  /* Reset #col2 img width 100% back to default. */
+  width: auto;
 }
 
 /* Setup */
