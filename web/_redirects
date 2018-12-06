@@ -1,10 +1,14 @@
+# The first matching rule applies. List more specific rules before more general ones.
+
 # HTTP Status Codes
 # 301 = permanent (default, the original URL can no longer exist and the search engine ranking is transferred)
 # 302 = temporary (uncommon, the original URL should come back and keeps its search engine ranking)
 
-/s/* /static/:splat
+/s/raphael-schaad.jpg /static/raphael-schaad-2016.jpg 302
+/s/raphael-schaad-bw.jpg /static/raphael-schaad-2016-bw.jpg 302
+/static/raphael-schaad.jpg /static/raphael-schaad-2016.jpg 302
+/static/raphael-schaad-bw.jpg /static/raphael-schaad-2016-bw.jpg 302
 
-/s/raphael-schaad.jpg /s/raphael-schaad-2016.jpg 302
-/s/raphael-schaad-bw.jpg /s/raphael-schaad-2016-bw.jpg 302
+/s/* /static/:splat
 
 /portfolio -> https://raphaelschaad.github.io/portfolio 302
