@@ -20,9 +20,13 @@ body {
   color: white;
   /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.7;
 
   margin: 0;
+}
+
+p {
+  margin: 16px 0;
 }
 
 #cols {
@@ -57,11 +61,11 @@ body {
 #title {
   color: #666;
   letter-spacing: 2px;
-  margin: -9px 0 0 0;
+  margin: -8px 0 0 0;
 }
 
 #description {
-  margin: 104px 0 0 0;
+  margin: 108px 0 0 0;
   min-width: 28em;
 }
 
@@ -120,8 +124,8 @@ body {
   height: 40px;
 
   display: inline-block;
-  vertical-align: -40%;
-  margin: 0 -4px -1px -4px;
+  vertical-align: -34%;
+  margin: 0 -4px -3px -4px;
 
   /* The smaller the number, the "bigger" the 3D effect. */
   -webkit-perspective: 400px;
@@ -284,9 +288,9 @@ body {
   font-weight: inherit;
   text-indent: 8px;
   padding: 0 0 2px 0;
-  margin: 8px 0;
-  width: 35%;
-  min-width: 200px;
+  margin: 8px 2px 8px 0;
+  width: 30%;
+  min-width: 216px;
 }
 
 #mc_embed_signup input.button {
@@ -303,8 +307,8 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
-  width: 25%;
-  min-width: 100px;
+  width: 20%;
+  min-width: 80px;
 
   cursor: pointer;
 
