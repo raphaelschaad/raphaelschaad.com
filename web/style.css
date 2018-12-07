@@ -61,11 +61,11 @@ p {
 #title {
   color: #666;
   letter-spacing: 2px;
-  margin: -8px 0 0 0;
+  margin: -10px 0 0 0;
 }
 
 #description {
-  margin: 108px 0 0 0;
+  margin: 106px 0 0 0;
   min-width: 28em;
 }
 
@@ -290,7 +290,7 @@ p {
   padding: 0 0 2px 0;
   margin: 8px 2px 8px 0;
   width: 30%;
-  min-width: 216px;
+  min-width: 200px;
 }
 
 #mc_embed_signup input.button {
@@ -307,8 +307,7 @@ p {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
-  width: 20%;
-  min-width: 80px;
+  width: 120px;
 
   cursor: pointer;
 
