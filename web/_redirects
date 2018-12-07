@@ -11,6 +11,8 @@ https://raphaelschaad.netlify.com/* https://raphaelschaad.name/:splat 301!
 
 # Redirect domain aliases to primary domain
 https://raphaelschaad.design/* https://raphaelschaad.name/:splat 301!
+
+http://*.raphaelschaad.design/* https://raphaelschaad.name/:splat 301!
 https://*.raphaelschaad.design/* https://raphaelschaad.name/:splat 301!
 
 /s/raphael-schaad.jpg /static/raphael-schaad-2016.jpg 302
