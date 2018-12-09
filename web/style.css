@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   /* #cols margin + #description min-width */
-  min-width: 30em;
+  min-width: 36.2em;
   height: 0.3em;
 
   background-image: linear-gradient(to right, #89BEC7, #E39059, #E38FAC);
@@ -71,7 +71,7 @@ p {
 
 #description {
   margin: 5.3em 0 0 0;
-  min-width: 32em;
+  min-width: 35em;
 }
 
 #contact {
