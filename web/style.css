@@ -6,7 +6,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 5px;
+  /* #cols margin + #description min-width */
+  min-width: 29.2em;
+  height: 0.3em;
 
   background-image: linear-gradient(to right, #89BEC7, #E39059, #E38FAC);
 }
@@ -21,29 +23,31 @@ body {
   /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
   font-weight: 500;
   line-height: 1.7;
+  /* Disable auto text size increase on mobile to control it more finely with media queries. This also fixes that #verb was a different size from paragraph text. */
+  text-size-adjust: none;
 
   margin: 0;
 }
 
 p {
-  margin: 16px 0;
+  margin: 0.8em 0;
 }
 
 #cols {
   display: flex;
-  margin: 24px;
+  flex-wrap: wrap;
+  margin: 1.2em;
 }
 
 #col1 {
   flex: 25%;
-  min-width: 12em;
 }
 
 #col2 {
   flex: 75%;
 }
 
-#col2 p {
+#col2 * {
   max-width: 45em;
 }
 
@@ -52,35 +56,38 @@ p {
 }
 
 #name {
-  font-size: 32px;
+  font-size: 160%;
   font-weight: 700;
-  letter-spacing: -1.8px;
-  margin: 64px 0 0 0;
+  letter-spacing: -0.055em;
+  margin: 2em 0 0 0;
 }
 
 #title {
   color: #666;
-  letter-spacing: 2px;
-  margin: -10px 0 0 0;
+  letter-spacing: 0.1em;
+  margin: -0.5em 0 0 0;
+  min-width: 12em;
 }
 
 #description {
-  margin: 106px 0 0 0;
+  margin: 5.3em 0 0 0;
   min-width: 28em;
 }
 
 #contact {
   list-style-type: none;
-  margin: 8px 0;
+  margin: 0.4em 0;
   padding: 0;
 }
 
 #contact li {
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 0.5em 0 0;
 }
 
 #contact img {
+  width: 0.8em;
+
   /* B: 40% = #666 */
   -webkit-filter: brightness(40%);
   filter: brightness(40%);
@@ -98,39 +105,39 @@ p {
 }
 
 #contact img:active {
-  -webkit-transform: translateY(1px);
-  -ms-transform: translateY(1px);
-  transform: translateY(1px);
+  -webkit-transform: translateY(0.05em);
+  -ms-transform: translateY(0.05em);
+  transform: translateY(0.05em);
 }
 
 #verb {
   display: inline-block;
   width: 2.35em;
-  letter-spacing: 0.01px;
+  letter-spacing: 0.001em;
 }
 
 .specialty {
   /* Thicker underline than with text-decoration. */
   /*border-bottom-style: solid;*/
   border-color: #666;
-  border-width: 2px;
-  padding: 0 0 3px 0;
+  border-width: 0.1em;
+  padding: 0 0 0.15em 0;
 }
 
 /* Box -- https://3dtransforms.desandro.com */
 #scene {
-  width: 120px;
+  width: 6em;
   /* The height is repeated (hardcoded) as line-height for the faces. */
-  height: 40px;
+  height: 2em;
 
   display: inline-block;
   vertical-align: -34%;
-  margin: 0 -4px -3px -4px;
+  margin: 0 -0.2em -0.15em -0.2em;
 
   /* The smaller the number, the "bigger" the 3D effect. */
-  -webkit-perspective: 400px;
-  -ms-perspective: 400px;
-  perspective: 400px;
+  -webkit-perspective: 20em;
+  -ms-perspective: 20em;
+  perspective: 20em;
 
   cursor: text;
 }
@@ -159,7 +166,7 @@ p {
 
   /* We currently only show images on the faces, if we were to show text and want it to be centered:
   text-align: center;
-  line-height: 40px; */
+  line-height: 2em; */
 
   /* If side colors have alpha and the backfaces are not hidden, the object is translucent. */
   -webkit-backface-visibility: hidden;
@@ -175,122 +182,125 @@ p {
   bottom: 0;
   left: 0;
   margin: auto;
-  /* Reset #col2 img width 100% back to default. */
-  width: auto;
+  width: 100%;
+}
+
+#object .bottom img {
+  width: 1em;
 }
 
 /* Setup */
 #object .front {
   background: #89BEC7;
   
-  -webkit-transform: translateZ(20px);
-  -ms-transform: translateZ(20px);
-  transform: translateZ(20px);
+  -webkit-transform: translateZ(1em);
+  -ms-transform: translateZ(1em);
+  transform: translateZ(1em);
 }
 
 #object .back {
   background: #E2A8BC;
 
-  -webkit-transform: rotateX(-180deg) translateZ(20px);
-  -ms-transform: rotateX(-180deg) translateZ(20px);
-  transform: rotateX(-180deg) translateZ(20px);
+  -webkit-transform: rotateX(-180deg) translateZ(1em);
+  -ms-transform: rotateX(-180deg) translateZ(1em);
+  transform: rotateX(-180deg) translateZ(1em);
 }
 
 #object .top {
   background: #F0CA8D;
 
-  -webkit-transform: rotateX(90deg) translateZ(20px);
-  -ms-transform: rotateX(90deg) translateZ(20px);
-  transform: rotateX(90deg) translateZ(20px);
+  -webkit-transform: rotateX(90deg) translateZ(1em);
+  -ms-transform: rotateX(90deg) translateZ(1em);
+  transform: rotateX(90deg) translateZ(1em);
 }
 
 #object .bottom {
   background: #AAA;
 
-  -webkit-transform: rotateX(-90deg) translateZ(20px);
-  -ms-transform: rotateX(-90deg) translateZ(20px);
-  transform: rotateX(-90deg) translateZ(20px);
+  -webkit-transform: rotateX(-90deg) translateZ(1em);
+  -ms-transform: rotateX(-90deg) translateZ(1em);
+  transform: rotateX(-90deg) translateZ(1em);
 }
 
 #object .right {
-  -webkit-transform: rotateY(90deg) translateZ(60px);
-  -ms-transform: rotateY(90deg) translateZ(60px);
-  transform: rotateY(90deg) translateZ(60px);
+  -webkit-transform: rotateY(90deg) translateZ(3em);
+  -ms-transform: rotateY(90deg) translateZ(3em);
+  transform: rotateY(90deg) translateZ(3em);
 }
 
 #object .left {
-  -webkit-transform: rotateY(-90deg) translateZ(60px);
-  -ms-transform: rotateY(-90deg) translateZ(60px);
-  transform: rotateY(-90deg) translateZ(60px);
+  -webkit-transform: rotateY(-90deg) translateZ(3em);
+  -ms-transform: rotateY(-90deg) translateZ(3em);
+  transform: rotateY(-90deg) translateZ(3em);
 }
 
 #object .right, #object .left {
   background: #000;
 
-  width: 40px;
-  left: 40px;
+  width: 2em;
+  left: 2em;
 }
 
 /* Transforms */
 #object.show-front {
-  -webkit-transform: translateZ(-60px);
-  -ms-transform: translateZ(-60px);
-  transform: translateZ(-60px);
+  -webkit-transform: translateZ(-3em);
+  -ms-transform: translateZ(-3em);
+  transform: translateZ(-3em);
 }
 
 #object.show-back {
   /* +0.001 to force Safari to not rotate "backwards". Doesn't work for FF. */
-  -webkit-transform: translateZ(-60px) rotateX(-180.001deg);
-  -ms-transform: translateZ(-60px) rotateX(-180.001deg);
-  transform: translateZ(-60px) rotateX(-180.001deg);
+  -webkit-transform: translateZ(-3em) rotateX(-180.001deg);
+  -ms-transform: translateZ(-3em) rotateX(-180.001deg);
+  transform: translateZ(-3em) rotateX(-180.001deg);
 }
 
 #object.show-top {
-  -webkit-transform: translateZ(-60px) rotateX(-90deg);
-  -ms-transform: translateZ(-60px) rotateX(-90deg);
-  transform: translateZ(-60px) rotateX(-90deg);
+  -webkit-transform: translateZ(-3em) rotateX(-90deg);
+  -ms-transform: translateZ(-3em) rotateX(-90deg);
+  transform: translateZ(-3em) rotateX(-90deg);
 }
 
 #object.show-bottom {
-  -webkit-transform: translateZ(-60px) rotateX(90deg);
-  -ms-transform: translateZ(-60px) rotateX(90deg);
-  transform: translateZ(-60px) rotateX(90deg);
+  -webkit-transform: translateZ(-3em) rotateX(90deg);
+  -ms-transform: translateZ(-3em) rotateX(90deg);
+  transform: translateZ(-3em) rotateX(90deg);
 }
 
 #object.show-right {
-  -webkit-transform: translateZ(-60px) rotateY(-90deg);
-  -ms-transform: translateZ(-60px) rotateY(-90deg);
-  transform: translateZ(-60px) rotateY(-90deg);
+  -webkit-transform: translateZ(-3em) rotateY(-90deg);
+  -ms-transform: translateZ(-3em) rotateY(-90deg);
+  transform: translateZ(-3em) rotateY(-90deg);
 }
 
 #object.show-left {
-  -webkit-transform: translateZ(-60px) rotateY(90deg);
-  -ms-transform: translateZ(-60px) rotateY(90deg);
-  transform: translateZ(-60px) rotateY(90deg);
+  -webkit-transform: translateZ(-3em) rotateY(90deg);
+  -ms-transform: translateZ(-3em) rotateY(90deg);
+  transform: translateZ(-3em) rotateY(90deg);
 }
 
 /* Mailchimp Signup Form */
 #mc_embed_signup {
-  margin-bottom: 48px;
+  margin-bottom: 2.4em;
 }
 
 #mc_embed_signup p {
-  margin-bottom: 4px;
+  margin-bottom: 0.2em;
 }
 
 #mc_embed_signup input.email {
   color: #fff;
   background-color: inherit;
-  border: 1px solid #666;
-  height: 38px;
+  border: 0.05em solid #666;
+  height: 1.9em;
   vertical-align: middle;
   font-size: inherit;
   font-weight: inherit;
-  text-indent: 8px;
-  padding: 0 0 2px 0;
-  margin: 8px 2px 8px 0;
+  text-indent: 0.4em;
+  padding: 0 0 0.1em 0;
+  margin: 0.4em 0.1em 0.4em 0;
   width: 30%;
-  min-width: 200px;
+  min-width: 10em;
 }
 
 #mc_embed_signup input.button {
@@ -300,14 +310,14 @@ p {
   /* Requirec configuration to prevent rounding on mobile. */
   border: 0 none;
   border-radius: 0;
-  height: 40px;
+  height: 2.865em;
   vertical-align: middle;
   text-align: center;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 70%;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   font-weight: 700;
-  width: 120px;
+  width: 8.571em;
 
   cursor: pointer;
 
@@ -320,4 +330,28 @@ p {
 
   /* On mouse in */
   transition: 0.1s;
+}
+
+@media only screen and (max-device-width: 736px) {
+  body {
+    font-size: 200%;
+  }
+  #contact li {
+    margin: 0 0.8em 0 0;
+  }
+  #contact img {
+    width: 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 1007px) {
+  #description {
+    margin-top: 1.6em;
+  }
 }

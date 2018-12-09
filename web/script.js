@@ -1,7 +1,7 @@
 const sides = [
   {
     "verb": "code",
-    "spacing": 0.01,
+    "spacing": 0.001,
     "face": "show-front"
   },
   {
@@ -11,7 +11,7 @@ const sides = [
   },
   {
     "verb": "build",
-    "spacing": 0.01,
+    "spacing": 0.0008,
     "face": "show-back"
   }
 ];
