@@ -24,6 +24,8 @@ body {
   font-weight: 500;
   line-height: 1.7;
   /* Disable auto text size increase on mobile to control it more finely with media queries. This also fixes that #verb was a different size from paragraph text. */
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   text-size-adjust: none;
 
   margin: 0;
