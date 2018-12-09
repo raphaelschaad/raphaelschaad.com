@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   /* #cols margin + #description min-width */
-  min-width: 29.2em;
+  min-width: 29.7em;
   height: 0.3em;
 
   background-image: linear-gradient(to right, #89BEC7, #E39059, #E38FAC);
@@ -71,7 +71,7 @@ p {
 
 #description {
   margin: 5.3em 0 0 0;
-  min-width: 28em;
+  min-width: 28.5em;
 }
 
 #contact {
@@ -307,9 +307,10 @@ p {
   /* Hard-coded repetition of body background-color. */
   color: #031018;
   background-color: #666;
-  /* Requirec configuration to prevent rounding on mobile. */
+  /* Required configuration to prevent rounding on mobile. */
   border: 0 none;
   border-radius: 0;
+  -webkit-appearance: button;
   height: 2.865em;
   vertical-align: middle;
   text-align: center;
