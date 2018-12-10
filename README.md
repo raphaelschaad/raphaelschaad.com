@@ -3,7 +3,7 @@
 ## Domains on Netlify
 To redirect all possible combinations (`[http[s]://][www.]raphaelschaad.x[/[y]]`) of one of my secondary domains to my primary domain (`https://raphaelschaad.com[/[y]]`), follow these steps (note that there is no easy way to catch random subdomains and redirect them, nor does it seem to be a convention with the big guys):
 
-1. If possible, use the nameservers that the registrar provides, e.g. `ns1.hover.com` and `ns2.hover.com`, which usually is the default.
+1. If possible, use the nameservers that the registrar provides (caveat: Netlify can only create wildcard HTTPS certs for domains they manage the DNS records for), e.g. `ns1.hover.com` and `ns2.hover.com`, which usually is the default.
 2. Configure the registrar's DNS records:
   - `@` (representing no hostname) as an `A` record pointing to Netlify's load balancer's IP `104.198.14.52`.
   - `www` as a `CNAME` record pointing to Netlify's default subdomain `raphaelschaad.netlify.com`.
