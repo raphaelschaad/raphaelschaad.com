@@ -11,6 +11,8 @@ https://raphaelschaad.name/* https://raphaelschaad.com/:splat 301!
 https://www.raphaelschaad.name/* https://raphaelschaad.com/:splat 301!
 https://raphaelschaad.ch/* https://raphaelschaad.com/:splat 301!
 https://www.raphaelschaad.ch/* https://raphaelschaad.com/:splat 301!
+https://schaad.co/* https://raphaelschaad.com/:splat 301!
+https://www.schaad.co/* https://raphaelschaad.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://raphaelschaad.netlify.com/* https://raphaelschaad.com/:splat 301!
