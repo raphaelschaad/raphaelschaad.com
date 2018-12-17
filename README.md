@@ -1,5 +1,8 @@
 # raphaelschaad.com
 
+## To-do
+- [ ] Address SEO improvements from website.grader.com
+
 ## Domains on Netlify
 To redirect all possible combinations (`[http[s]://][www.]raphaelschaad.x[/[y]]`) of one of my secondary domains to my primary domain (`https://raphaelschaad.com[/[y]]`), follow these steps (note that there is no easy way to catch random subdomains and redirect them, nor does it seem to be a convention with the big guys):
 
