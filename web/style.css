@@ -6,8 +6,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  /* #cols margin + #description min-width */
-  min-width: 29.2em;
   height: 0.3em;
 
   background-image: linear-gradient(to right, #89BEC7, #E39059, #E38FAC);
@@ -23,10 +21,6 @@ body {
   /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
   font-weight: 500;
   line-height: 1.7;
-  /* Disable auto text size increase on mobile to control it more finely with media queries. This also fixes that #verb was a different size from paragraph text. */
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
 
   margin: 0;
 }
@@ -37,7 +31,6 @@ p {
 
 #cols {
   display: flex;
-  flex-wrap: wrap;
   margin: 1.2em;
 }
 
@@ -57,6 +50,10 @@ p {
   width: 100%;
 }
 
+#col1 > header {
+  min-width: 12em;
+}
+
 #name {
   font-size: 160%;
   font-weight: 700;
@@ -68,12 +65,10 @@ p {
   color: #666;
   letter-spacing: 0.1em;
   margin: -0.5em 0 0 0;
-  min-width: 12em;
 }
 
 #description {
   margin: 5.3em 0 0 0;
-  min-width: 28em;
 }
 
 #contact {
@@ -85,6 +80,10 @@ p {
 #contact li {
   float: left;
   margin: 0 0.5em 0 0;
+}
+
+#contact li:last-child {
+  margin: 0;
 }
 
 #contact img {
@@ -300,7 +299,7 @@ p {
   font-weight: inherit;
   text-indent: 0.4em;
   padding: 0 0 0.1em 0;
-  margin: 0.4em 0.1em 0.4em 0;
+  margin: 0.4em 0.2em 0.4em 0;
   width: 30%;
   min-width: 10em;
 }
@@ -335,26 +334,60 @@ p {
   transition: 0.1s;
 }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 768px) {
+  #cols {
+    flex-direction: column;
+  }
+
+  #description {
+    margin-top: 1.6em;
+  }
+
   body {
-    font-size: 200%;
+    font-size: 100%;
   }
-  #contact li {
-    margin: 0 0.8em 0 0;
+
+  #col1 > header {
+    display: flex;
+    align-items: flex-start;
   }
+
+  #name {
+    margin: 1em 0 0 0;
+  }
+
+  #contact {
+    margin: 2.4em 0 0 auto;
+  }
+
+  #contact li { 
+    margin: 0 1em 0 0;
+  }
+
   #contact img {
-    width: 1em;
+    width: 1.4em;
+  }
+}
+
+/* Suppress hover effect on touch devices to fix sticky effect */
+@media (hover:none), (hover:on-demand) {
+  #contact img:hover {
+    /* B: 40% = #666 */
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+
+    transition: initial;
+  }
+
+  #contact img:active {
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   body {
     font-size: 150%;
-  }
-}
-
-@media only screen and (max-width: 1007px) {
-  #description {
-    margin-top: 1.6em;
   }
 }
