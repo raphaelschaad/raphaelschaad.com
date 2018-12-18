@@ -2,6 +2,7 @@
 
 ## To-do
 - [ ] Address SEO improvements from website.grader.com
+- [ ] Add all URL versions to Google Search Console (https, http, www, and non-www)
 - [ ] Add favicon
 
 ## Domains on Netlify
