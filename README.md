@@ -1,6 +1,6 @@
 # raphaelschaad.com
 
-This git repo contains my personal website, currently deployed using Netlify at [raphaelschaad.com](https://raphaelschaad.com).
+This git repo contains my personal website, currently deployed using Netlify at [raphaelschaad.com](https://raphaelschaad.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/9096afa9-2d5e-44dc-9884-7f4be8ce8032/deploy-status)](https://app.netlify.com/sites/raphaelschaad/deploys).
 
 ## To-do
 - [ ] Address SEO improvements from website.grader.com
