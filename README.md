@@ -6,6 +6,7 @@ This git repo contains my personal website, currently deployed using Netlify at 
 - [ ] Address SEO improvements from website.grader.com
 - [ ] Add all URL versions to Google Search Console (https, http, www, and non-www)
 - [ ] Add favicon
+- [ ] Create custom 404 page (see [An Analysis of 24 Creative 404 Error Pages](https://blog.prototypr.io/an-analysis-of-24-creative-404-error-pages-7be770535a8f))
 
 ## Domains on Netlify
 To redirect all possible combinations (`[http[s]://][www.]raphaelschaad.x[/[y]]`) of one of my secondary domains to my primary domain (`https://raphaelschaad.com[/[y]]`), follow these steps (note that there is no easy way to catch random subdomains and redirect them, nor does it seem to be a convention with the big guys):
