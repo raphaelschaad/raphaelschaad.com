@@ -1,0 +1,84 @@
+# The first matching rule applies. List more specific rules before more general ones.
+
+# Redirects and headers are *global* for all builds and do not get scoped to contexts no matter where in the file they are defined.
+# For context-specific rules, use `_headers` or `_redirects` files, which are *per-deploy*.
+
+# HTTP Status Codes
+# status = 301: permanent (default, the original URL can no longer exist and the search engine ranking is transferred)
+# status = 302: temporary (uncommon, the original URL should come back and keeps its search engine ranking)
+
+# URL Shadowing
+# force = true: ensure to always redirect ot the `to` URL
+# force = false: default, do not redirect if a file actually exists under the `from` URL
+
+# Redirect domain aliases to primary .com domain
+# .design (non-www and www)
+[[redirects]]
+  from = "https://raphaelschaad.design/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.raphaelschaad.design/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+# .name (non-www and www)
+[[redirects]]
+  from = "https://www.raphaelschaad.name/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.raphaelschaad.name/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+# .ch (non-www and www)
+[[redirects]]
+  from = "https://www.raphaelschaad.ch/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.raphaelschaad.ch/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://raphaelschaad.netlify.com/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+# Redirect specific aliases to internal files
+[[redirects]]
+  from = "/s/raphael-schaad.jpg"
+  to = "/static/raphael-schaad-2016.jpg"
+  status = 302
+
+[[redirects]]
+  from = "/s/raphael-schaad-bw.jpg"
+  to = "/static/raphael-schaad-2016-bw.jpg"
+  status = 302
+
+[[redirects]]
+  from = "/static/raphael-schaad.jpg"
+  to = "/static/raphael-schaad-2016.jpg"
+  status = 302
+
+[[redirects]]
+  from = "/static/raphael-schaad-bw.jpg"
+  to = "/static/raphael-schaad-2016-bw.jpg"
+  status = 302
+
+# Redirect specific aliases to external URLs
+[[redirects]]
+  from = "/portfolio"
+  to = "https://raphaelschaad.github.io/portfolio"
+  status = 302
+
+# Redirect shorthands
+[[redirects]]
+  from = "/s/*"
+  to = "/static/:splat"

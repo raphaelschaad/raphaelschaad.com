@@ -20,4 +20,4 @@ To redirect all possible combinations (`[http[s]://][www.]raphaelschaad.x[/[y]]`
 
 If the registrar doesn't provide/charges for nameserver (e.g. switchplus.ch), first, [setup DNS](https://app.netlify.com/account/dns/setup) and [add records](https://app.netlify.com/account/dns) like in step #2 above at Netlify. Then, change the nameservers at the registrar to the ones Netlify provides. Finally, follow step #3 above.
 
-To have the URL in the browser display the primary domain even when coming from a secondary domain, redirect domain aliases to the primary domain using the `_redirects` file.
+To have the URL in the browser display the primary domain even when coming from a secondary domain, redirect domain aliases to the primary domain using the `netlify.toml` configuration file.
