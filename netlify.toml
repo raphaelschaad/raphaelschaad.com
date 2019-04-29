@@ -84,6 +84,11 @@
   to = "https://raphaelschaad.github.io/portfolio"
   status = 302
 
+[[redirects]]
+  from = "/thesis"
+  to = "http://web.media.mit.edu/~schaad/mit-master-thesis-schaad-visible-communities-2017.pdf"
+  status = 302
+
 # Redirect shorthands
 [[redirects]]
   from = "/s/*"
