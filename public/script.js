@@ -30,12 +30,12 @@ function displayNextSide() {
   boxEl.classList.remove(sides[currentSideIndex].face);
   currentSideIndex = ++currentSideIndex % sides.length;
   boxEl.classList.add(sides[currentSideIndex].face);
-  
+
   verbEl.innerHTML = sides[currentSideIndex].verb;
   verbEl.style.letterSpacing = sides[currentSideIndex].spacing + 'em';
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   init();
   setInterval(displayNextSide, 3000);
 });
