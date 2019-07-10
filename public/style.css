@@ -79,7 +79,7 @@ p {
 
 #contact li {
   float: left;
-  margin: 0 0.5em 0 0;
+  margin: 0 0.6em 0 0;
 }
 
 #contact li:last-child {
@@ -119,7 +119,7 @@ p {
 
 .specialty {
   /* Thicker underline than with text-decoration. */
-  /*border-bottom-style: solid;*/
+  border-bottom-style: solid;
   border-color: #666;
   border-width: 0.1em;
   padding: 0 0 0.15em 0;
