@@ -193,7 +193,7 @@ p {
 /* Setup */
 #object .front {
   background: #89BEC7;
-  
+
   -webkit-transform: translateZ(1em);
   -ms-transform: translateZ(1em);
   transform: translateZ(1em);
@@ -360,7 +360,7 @@ p {
     margin: 2.4em 0 0 auto;
   }
 
-  #contact li { 
+  #contact li {
     margin: 0 1em 0 0;
   }
 
