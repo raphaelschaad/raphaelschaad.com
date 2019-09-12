@@ -125,6 +125,11 @@ p {
   padding: 0 0 0.15em 0;
 }
 
+.smallcaps {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.03em;
+}
+
 /* Box -- https://3dtransforms.desandro.com */
 #scene {
   width: 6em;
