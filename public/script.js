@@ -2,18 +2,18 @@ const sides = [
   {
     "verb": "code",
     "spacing": 0.001,
-    "face": "show-front"
+    "face": "show-front",
   },
   {
     "verb": "make",
     "spacing": -0.06,
-    "face": "show-top"
+    "face": "show-top",
   },
   {
     "verb": "build",
     "spacing": 0.0008,
-    "face": "show-back"
-  }
+    "face": "show-back",
+  },
 ];
 
 let currentSideIndex = 0;
