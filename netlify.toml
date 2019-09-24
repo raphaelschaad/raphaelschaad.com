@@ -6,6 +6,21 @@
   # If a base directory has been specified, include it in this path.
   publish = "./public/"
 
+# Post processing asset optimization global settings
+[build.processing]
+# If skip_processing = true, all other settings are ignored
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = true
+[build.processing.css]
+  bundle = false
+  minify = false
+[build.processing.js]
+  bundle = false
+  minify = false
+[build.processing.images]
+  compress = true
+
 # Redirects and headers are *global* for all builds and do not get scoped to contexts no matter where in the file they are defined.
 # For context-specific rules, use `_headers` or `_redirects` files, which are *per-deploy*.
 
