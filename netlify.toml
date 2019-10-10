@@ -72,7 +72,12 @@
   to = "https://raphaelschaad.com/:splat"
   force = true
 
-# Redirect specific aliases to internal files
+# Redirect specific aliases to internal pages/files
+[[redirects]]
+  from = "/mailinglist"
+  to = "/"
+  status = 302
+
 [[redirects]]
   from = "/s/raphael-schaad.jpg"
   to = "/static/raphael-schaad-2016.jpg"
