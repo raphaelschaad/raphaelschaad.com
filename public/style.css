@@ -29,6 +29,18 @@ p {
   margin: 0.8em 0;
 }
 
+footer {
+  margin: 5em 0 0 0;
+  border-top: 0.05em solid #666;
+}
+
+footer p {
+  font-size: 70%;
+  font-weight: initial;
+  letter-spacing: 0.005em;
+  color: #666;
+}
+
 #cols {
   display: flex;
   margin: 1.2em;
