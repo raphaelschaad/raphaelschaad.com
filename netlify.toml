@@ -80,22 +80,22 @@
 
 [[redirects]]
   from = "/s/raphael-schaad.jpg"
-  to = "/static/raphael-schaad-2016.jpg"
+  to = "/static/raphael-schaad-2019.jpg"
   status = 302
 
 [[redirects]]
   from = "/s/raphael-schaad-bw.jpg"
-  to = "/static/raphael-schaad-2016-bw.jpg"
+  to = "/static/raphael-schaad-2019-bw.jpg"
   status = 302
 
 [[redirects]]
   from = "/static/raphael-schaad.jpg"
-  to = "/static/raphael-schaad-2016.jpg"
+  to = "/static/raphael-schaad-2019.jpg"
   status = 302
 
 [[redirects]]
   from = "/static/raphael-schaad-bw.jpg"
-  to = "/static/raphael-schaad-2016-bw.jpg"
+  to = "/static/raphael-schaad-2019-bw.jpg"
   status = 302
 
 # Redirect specific aliases to external URLs
