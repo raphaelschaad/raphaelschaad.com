@@ -307,7 +307,7 @@ footer p {
 }
 
 #mc_embed_signup input.email {
-  color: #fff;
+  color: #FFF;
   background-color: inherit;
   border: 0.05em solid #666;
   height: 1.9em;
@@ -345,7 +345,7 @@ footer p {
 }
 
 #mc_embed_signup input.button:hover {
-  background-color: #fff;
+  background-color: #FFF;
 
   /* On mouse in */
   transition: 0.1s;
