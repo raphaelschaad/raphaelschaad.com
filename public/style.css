@@ -17,7 +17,7 @@ body {
   /* Default text settings */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: white;
+  color: #CCC;
   /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
   font-weight: 500;
   line-height: 1.7;
@@ -27,6 +27,31 @@ body {
 
 p {
   margin: 0.8em 0;
+}
+
+a {
+  text-decoration: none;
+  /* Thicker underline than with text-decoration. */
+  border-bottom-style: solid;
+  border-color: #666;
+  border-width: 0.1em;
+  padding: 0 0 0.15em 0;
+}
+
+a:link {
+  color: #EEE;
+}
+
+a:visited {
+  color: #CCC;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+a:active {
+  color: #EEE;
 }
 
 footer {
@@ -73,6 +98,23 @@ footer p {
   margin: 2em 0 0 0;
 }
 
+#name a {
+  border-bottom-style: none;
+}
+
+#name a:link,
+#name a:visited {
+  color: #EEE;
+}
+
+#name a:hover {
+  color: #FFF;
+}
+
+#name a:active {
+  color: #EEE;
+}
+
 #title {
   color: #666;
   letter-spacing: 0.1em;
@@ -92,6 +134,10 @@ footer p {
 #contact li {
   float: left;
   margin: 0 0.6em 0 0;
+}
+
+#contact li a {
+  border-bottom-style: none;
 }
 
 #contact li:last-child {
@@ -130,11 +176,14 @@ footer p {
 }
 
 .specialty {
-  /* Thicker underline than with text-decoration. */
-  border-bottom-style: solid;
-  border-color: #666;
-  border-width: 0.1em;
-  padding: 0 0 0.15em 0;
+  border-bottom-style: dotted;
+  cursor: text;
+}
+
+a:visited.specialty ,
+a:hover.specialty ,
+a:active.specialty {
+  color: #CCC;
 }
 
 .smallcaps {
