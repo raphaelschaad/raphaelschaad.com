@@ -30,28 +30,25 @@ p {
 }
 
 a {
+  color: #FFF;
   text-decoration: none;
-  /* Thicker underline than with text-decoration. */
   border-bottom-style: solid;
+}
+
+.specialty {
+  border-bottom-style: dotted;
+}
+
+a,
+.specialty {
+  /* Thicker underline than with text-decoration. */
   border-color: #666;
   border-width: 0.1em;
   padding: 0 0 0.15em 0;
 }
 
-a:link {
-  color: #EEE;
-}
-
-a:visited {
-  color: #CCC;
-}
-
 a:hover {
-  color: #FFF;
-}
-
-a:active {
-  color: #EEE;
+  border-color: #CCC;
 }
 
 footer {
@@ -99,20 +96,8 @@ footer p {
 }
 
 #name a {
-  border-bottom-style: none;
-}
-
-#name a:link,
-#name a:visited {
-  color: #EEE;
-}
-
-#name a:hover {
   color: #FFF;
-}
-
-#name a:active {
-  color: #EEE;
+  border-bottom-style: none;
 }
 
 #title {
@@ -173,17 +158,6 @@ footer p {
   display: inline-block;
   width: 2.35em;
   letter-spacing: 0.001em;
-}
-
-.specialty {
-  border-bottom-style: dotted;
-  cursor: text;
-}
-
-a:visited.specialty ,
-a:hover.specialty ,
-a:active.specialty {
-  color: #CCC;
 }
 
 .smallcaps {
