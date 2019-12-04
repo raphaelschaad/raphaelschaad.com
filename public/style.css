@@ -51,6 +51,14 @@ a:hover {
   border-color: #CCC;
 }
 
+del {
+  text-decoration: line-through;
+}
+
+ins {
+  text-decoration: none;
+}
+
 .nobr {
   white-space: nowrap;
 }
