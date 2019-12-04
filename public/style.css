@@ -242,7 +242,7 @@ a:active.specialty {
 }
 
 #object img {
-  /* Center image */
+  /* Center image. */
   position: absolute;
   top: 0;
   right: 0;
@@ -316,7 +316,7 @@ a:active.specialty {
 }
 
 #object.show-back {
-  /* +0.001 to force Safari to not rotate "backwards". Doesn't work for FF. */
+  /* +0.001 to force Safari to not rotate "backwards" (doesn't work in Chrome/FF). */
   -webkit-transform: translateZ(-3em) rotateX(-180.001deg);
   -ms-transform: translateZ(-3em) rotateX(-180.001deg);
   transform: translateZ(-3em) rotateX(-180.001deg);
@@ -435,7 +435,7 @@ a:active.specialty {
   }
 }
 
-/* Suppress hover effect on touch devices to fix sticky effect */
+/* Suppress hover effect on touch devices to fix sticky effect. */
 @media (hover:none), (hover:on-demand) {
   #contact img:hover {
     /* B: 40% = #666 */
