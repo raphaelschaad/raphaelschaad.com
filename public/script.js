@@ -1,18 +1,18 @@
 const sides = [
   {
-    "verb": "code",
-    "spacing": 0.001,
-    "face": "show-front",
+    'verb': 'code',
+    'spacing': 0.001,
+    'face': 'show-front',
   },
   {
-    "verb": "make",
-    "spacing": -0.06,
-    "face": "show-top",
+    'verb': 'make',
+    'spacing': -0.06,
+    'face': 'show-top',
   },
   {
-    "verb": "build",
-    "spacing": 0.0008,
-    "face": "show-back",
+    'verb': 'build',
+    'spacing': 0.0008,
+    'face': 'show-back',
   },
 ];
 
