@@ -51,6 +51,10 @@ a:hover {
   border-color: #CCC;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 footer {
   margin: 5em 0 0 0;
   border-top: 0.05em solid #666;
