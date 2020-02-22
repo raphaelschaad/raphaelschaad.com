@@ -386,6 +386,24 @@ footer p {
   transition: 0.1s;
 }
 
+/* Suppress hover effect on touch devices to fix sticky effect. */
+@media (hover:none), (hover:on-demand) {
+  #contact img:hover {
+    /* B: 40% = #666 */
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+
+    transition: initial;
+  }
+
+  #contact img:active {
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+  }
+}
+
+/* Responsiveness */
 @media only screen and (max-width: 768px) {
   #cols {
     flex-direction: column;
@@ -418,23 +436,6 @@ footer p {
 
   #contact img {
     width: 1.4em;
-  }
-}
-
-/* Suppress hover effect on touch devices to fix sticky effect. */
-@media (hover:none), (hover:on-demand) {
-  #contact img:hover {
-    /* B: 40% = #666 */
-    -webkit-filter: brightness(40%);
-    filter: brightness(40%);
-
-    transition: initial;
-  }
-
-  #contact img:active {
-    -webkit-transform: initial;
-    -ms-transform: initial;
-    transform: initial;
   }
 }
 
