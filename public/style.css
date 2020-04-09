@@ -238,8 +238,16 @@ footer p {
   width: 100%;
 }
 
-#object .bottom img {
+/* Size and position the heart icon */
+#object .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#object .bottom svg {
   width: 1em;
+  height: 1em;
 }
 
 /* Setup */
