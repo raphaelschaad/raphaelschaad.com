@@ -98,6 +98,11 @@
   to = "/static/raphael-schaad-2019-bw.jpg"
   status = 302
 
+[[redirects]]
+  from = "/privacy"
+  to = "/static/2020-01-01-raphaelschaad.com-privacy-policy.pdf"
+  status = 302
+
 # Redirect specific aliases to external URLs
 [[redirects]]
   from = "/portfolio"
