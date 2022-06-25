@@ -80,22 +80,22 @@
 
 [[redirects]]
   from = "/s/raphael-schaad.jpg"
-  to = "/static/raphael-schaad-2021.jpg"
+  to = "/static/raphael-schaad-2022.jpg"
   status = 302
 
 [[redirects]]
   from = "/s/raphael-schaad-bw.jpg"
-  to = "/static/raphael-schaad-2021-bw.jpg"
+  to = "/static/raphael-schaad-2022-bw.jpg"
   status = 302
 
 [[redirects]]
   from = "/static/raphael-schaad.jpg"
-  to = "/static/raphael-schaad-2021.jpg"
+  to = "/static/raphael-schaad-2022.jpg"
   status = 302
 
 [[redirects]]
   from = "/static/raphael-schaad-bw.jpg"
-  to = "/static/raphael-schaad-2021-bw.jpg"
+  to = "/static/raphael-schaad-2022-bw.jpg"
   status = 302
 
 [[redirects]]
