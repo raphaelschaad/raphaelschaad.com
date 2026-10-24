@@ -29,7 +29,7 @@
 # status = 302: temporary (uncommon, the original URL should come back and keeps its search engine ranking)
 
 # URL Shadowing
-# force = true: ensure to always redirect ot the `to` URL
+# force = true: ensure to always redirect to the `to` URL
 # force = false: default, do not redirect if a file actually exists under the `from` URL
 
 # Redirect domain aliases to primary .com domain
