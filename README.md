@@ -13,7 +13,7 @@ Add the primary domain or a domain alias (secondary domain) by following these s
 1. If possible, use the nameservers that the registrar provides (caveat: Netlify can only create subdomain wildcard HTTPS certs for domains they manage the DNS records for), e.g. `ns1.hover.com` and `ns2.hover.com`, which usually is the default.
 2. Configure the registrar's DNS records:
   - `@` (representing no hostname) as an `A` record pointing to Netlify's load balancer's IP `104.198.14.52`.
-  - `www` as a `CNAME` record pointing to Netlify's default subdomain `raphaelschaad.netlify.com`.
+  - `www` as a `CNAME` record pointing to Netlify's default subdomain `raphaelschaad.netlify.app`.
   - Leave any mail-related DNS records.
 3. Add both the non-www and www-variant of the domain in Netlify's custom domains settings.
 

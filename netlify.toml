@@ -68,7 +68,7 @@
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
-  from = "https://raphaelschaad.netlify.com/*"
+  from = "https://raphaelschaad.netlify.app/*"
   to = "https://raphaelschaad.com/:splat"
   force = true
 
