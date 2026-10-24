@@ -33,7 +33,7 @@
 # force = false: default, do not redirect if a file actually exists under the `from` URL
 
 # Redirect domain aliases to primary .com domain
-# .design (non-www and www)
+# .design (bare and www)
 [[redirects]]
   from = "https://raphaelschaad.design/*"
   to = "https://raphaelschaad.com/:splat"
@@ -44,9 +44,9 @@
   to = "https://raphaelschaad.com/:splat"
   force = true
 
-# .name (non-www and www)
+# .name (bare and www)
 [[redirects]]
-  from = "https://www.raphaelschaad.name/*"
+  from = "https://raphaelschaad.name/*"
   to = "https://raphaelschaad.com/:splat"
   force = true
 
@@ -55,9 +55,9 @@
   to = "https://raphaelschaad.com/:splat"
   force = true
 
-# .ch (non-www and www)
+# .ch (bare and www)
 [[redirects]]
-  from = "https://www.raphaelschaad.ch/*"
+  from = "https://raphaelschaad.ch/*"
   to = "https://raphaelschaad.com/:splat"
   force = true
 

@@ -4,7 +4,7 @@ This git repo contains my personal website, currently deployed using Netlify at 
 
 # To-do
 - [ ] Address SEO improvements from website.grader.com
-- [ ] Add all URL versions to Google Search Console (https, http, www, and non-www)
+- [ ] Add all URL versions to Google Search Console (https, http, www, and bare)
 - [ ] Add favicon
 - [ ] Create custom 404 page (see [An Analysis of 24 Creative 404 Error Pages](https://blog.prototypr.io/an-analysis-of-24-creative-404-error-pages-7be770535a8f), [The 101 Course On Crafting 404 Pages](https://medium.muz.li/the-101-course-on-crafting-404-pages-93382461b0af))
 
@@ -15,7 +15,7 @@ Add the primary domain or a domain alias (secondary domain) by following these s
   - `@` (representing no hostname) as an `A` record pointing to Netlify's load balancer's IP `104.198.14.52`.
   - `www` as a `CNAME` record pointing to Netlify's default subdomain `raphaelschaad.netlify.app`.
   - Leave any mail-related DNS records.
-3. Add both the non-www and www-variant of the domain in Netlify's custom domains settings.
+3. Add both the bare and www-variant of the domain in Netlify's custom domains settings.
 
 If the registrar doesn't provide/charges for nameserver (e.g. switchplus.ch), first, [setup DNS](https://app.netlify.com/account/dns/setup) and [add records](https://app.netlify.com/account/dns) like in step #2 above at Netlify. Then, change the nameservers at the registrar to the ones Netlify provides. Finally, follow step #3 above.
 
