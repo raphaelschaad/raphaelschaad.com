@@ -45,6 +45,39 @@
   to = "https://raphaelschaad.com/:splat"
   force = true
 
+# .org (bare and www)
+[[redirects]]
+  from = "https://raphaelschaad.org/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.raphaelschaad.org/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+# .net (bare and www)
+[[redirects]]
+  from = "https://raphaelschaad.net/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.raphaelschaad.net/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+# .me (bare and www)
+[[redirects]]
+  from = "https://raphaelschaad.me/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://www.raphaelschaad.me/*"
+  to = "https://raphaelschaad.com/:splat"
+  force = true
+
 # Registered at 101domain
 # .name (bare and www)
 [[redirects]]
